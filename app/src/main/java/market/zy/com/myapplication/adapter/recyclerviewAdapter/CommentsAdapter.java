@@ -30,7 +30,7 @@ public class CommentsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
 
     public CommentsAdapter(Context context) {
         mContext = context;
-        for (int i = 0; i < 20 ;i++) {
+        for (int i = 0; i < 20; i++) {
             mData.add(new Comment());
         }
     }

@@ -145,7 +145,7 @@ public class TradeActivity extends MaterialDrawerActivity {
             @Override
             public void onScrolled(RecyclerView recyclerView, int dx, int dy) {
                 super.onScrolled(recyclerView, dx, dy);
-                int lastVisiableItemPosition = manager.findLastCompletelyVisibleItemPosition();
+                int lastVisiableItemPosition = manager.findLastVisibleItemPosition();
                 if (lastVisiableItemPosition == adapter.getItemCount() - 2) {
                     adapter.setShowLoadMore(true);
                 } else if (lastVisiableItemPosition == adapter.getItemCount() - 1

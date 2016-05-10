@@ -73,10 +73,10 @@ public class CommentsActivity extends BaseActivity {
             @Override
             public void onScrolled(RecyclerView recyclerView, int dx, int dy) {
                 super.onScrolled(recyclerView, dx, dy);
-                int lastItemPosition =  layoutManager.findLastVisibleItemPosition();
-                if (lastItemPosition == mRAdapter.getItemCount() - 2) {
+                int lastVisiableItemPosition =  layoutManager.findLastVisibleItemPosition();
+                if (lastVisiableItemPosition == mRAdapter.getItemCount() - 2) {
                     mRAdapter.setShowLoadMore(true);
-                } else if (lastItemPosition == mRAdapter.getItemCount() - 1
+                } else if (lastVisiableItemPosition == mRAdapter.getItemCount() - 1
                         && mRAdapter.isShowingLoadMore()) {
                     mRAdapter.setShowLoadMore(true);
                 } else {

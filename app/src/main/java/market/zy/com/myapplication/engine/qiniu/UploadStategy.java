@@ -31,21 +31,5 @@ public class UploadStategy {
                 }
             }
         }, null);
-        /*KeyMethod.getInstance().getKey(new Observer<QiniuKey>() {
-            @Override
-            public void onCompleted() {
-
-            }
-
-            @Override
-            public void onError(Throwable e) {
-
-            }
-
-            @Override
-            public void onNext(QiniuKey qiniuKey) {
-                key = qiniuKey.getUpload_key();
-            }
-        });*/
     }
 }
